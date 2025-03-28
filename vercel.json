@@ -1,8 +1,9 @@
 {
   "version": 2,
-  "rootDirectory": "Bananabyte",
-  "buildCommand": "npm run build",
-  "outputDirectory": ".next",
-  "installCommand": "npm install",
-  "framework": "nextjs"
+  "builds": [
+    {
+      "src": "Bananabyte/package.json",
+      "use": "@vercel/next"
+    }
+  ]
 } 
