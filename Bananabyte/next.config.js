@@ -16,12 +16,8 @@ const nextConfig = {
       },
     ],
   },
-  // Use standalone output for optimized Vercel deployments
+  // Define output directory for static exports - important for image handling in Vercel
   output: 'standalone',
-  // Disable serverless functions compression
-  compress: true,
-  // Enable static exports
-  trailingSlash: true,
   async headers() {
     return [
       {
