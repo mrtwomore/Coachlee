@@ -5,6 +5,13 @@ const ProjectModal = ({ project, onClose }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [imagesLoaded, setImagesLoaded] = useState(false);
   
+  // Effect to set images as loaded
+  useEffect(() => {
+    if (project && project.images && project.images.length > 0) {
+      setImagesLoaded(true);
+    }
+  }, [project]);
+  
   if (!project) return null;
   
   // Check if this project has multiple images
@@ -27,13 +34,6 @@ const ProjectModal = ({ project, onClose }) => {
       );
     }
   };
-
-  // Effect to set images as loaded
-  useEffect(() => {
-    if (project.images && project.images.length > 0) {
-      setImagesLoaded(true);
-    }
-  }, [project.images]);
 
   return (
     <div className={styles.modalOverlay} onClick={onClose}>
