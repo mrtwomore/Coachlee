@@ -9,6 +9,9 @@
     "start": "cd Bananabyte && npm run start",
     "lint": "cd Bananabyte && npm run lint"
   },
+  "dependencies": {
+    "next": "^15.2.4"
+  },
   "author": "",
   "license": "ISC"
 } 
