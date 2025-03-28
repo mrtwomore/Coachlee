@@ -31,13 +31,14 @@ export default function Home() {
         <section className={styles.hero}>
           <div className={styles.heroBackground}>
             <Image
-              src="/images/lee-bg.jpg"
+              src="/static/images/lee-bg.jpg"
               alt="Elite strength and conditioning training"
               className={styles.heroImage}
               width={1920}
               height={1080}
               priority
               quality={90}
+              unoptimized={true}
               style={{
                 width: '100%',
                 height: '100%',
@@ -125,12 +126,12 @@ export default function Home() {
             <div className={styles.imageGrid}>
               <div className={styles.imageCard}>
                 <Image
-                  src="/images/lee-2.jpg"
+                  src="/static/images/lee-2.jpg"
                   alt="Strength training for athletes"
                   width={600}
                   height={800}
                   className={styles.cardImage}
-                  unoptimized
+                  unoptimized={true}
                   style={{
                     width: '100%',
                     height: '100%',
@@ -144,12 +145,12 @@ export default function Home() {
               </div>
               <div className={styles.imageCard}>
                 <Image
-                  src="/images/lee-3.jpg"
+                  src="/static/images/lee-3.jpg"
                   alt="Speed and power training"
                   width={600}
                   height={800}
                   className={styles.cardImage}
-                  unoptimized
+                  unoptimized={true}
                   style={{
                     width: '100%',
                     height: '100%',
@@ -163,12 +164,12 @@ export default function Home() {
               </div>
               <div className={styles.imageCard}>
                 <Image
-                  src="/images/lee-bg.jpg"
+                  src="/static/images/lee-bg.jpg"
                   alt="Injury prevention and rehabilitation"
                   width={600}
                   height={800}
                   className={styles.cardImage}
-                  unoptimized
+                  unoptimized={true}
                   style={{
                     width: '100%',
                     height: '100%',
@@ -182,12 +183,12 @@ export default function Home() {
               </div>
               <div className={styles.imageCard}>
                 <Image
-                  src="/images/lee-5.jpg"
+                  src="/static/images/lee-5.jpg"
                   alt="Performance nutrition counseling"
                   width={600}
                   height={800}
                   className={styles.cardImage}
-                  unoptimized
+                  unoptimized={true}
                   style={{
                     width: '100%',
                     height: '100%',

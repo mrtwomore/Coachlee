@@ -27,13 +27,13 @@ export default function About() {
           <div className={styles.profile}>
             <div className={styles.profileImage}>
               <Image
-                src="/images/img-0297.jpg"
+                src="/static/images/img-0297.jpg"
                 alt="Coach Lee"
                 width={240}
                 height={240}
                 className={styles.avatar}
                 priority
-                unoptimized
+                unoptimized={true}
                 quality={95}
                 style={{
                   width: '100%',
