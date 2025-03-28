@@ -34,6 +34,4 @@ Backup_27032025
 C
 *.jpg
 *.jpeg
-*.png
-Bananabyte/node_modules
-Bananabyte/.next 
+*.png 
