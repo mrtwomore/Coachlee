@@ -1,11 +1,15 @@
 {
   "version": 2,
+  "buildCommand": "cd Bananabyte && npm run build",
+  "outputDirectory": "Bananabyte/.next",
+  "installCommand": "cd Bananabyte && npm install",
   "builds": [
     {
       "src": "Bananabyte/package.json",
       "use": "@vercel/next",
       "config": { 
-        "distDir": ".next"
+        "distDir": ".next",
+        "buildCommand": "npm run build"
       }
     }
   ],
