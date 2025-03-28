@@ -30,14 +30,20 @@ export default function Home() {
         <Navigation />
         <section className={styles.hero}>
           <div className={styles.heroBackground}>
-            <img
+            <Image
               src="/images/lee-bg.jpg"
               alt="Elite strength and conditioning training"
               className={styles.heroImage}
+              width={1920}
+              height={1080}
+              priority
+              quality={90}
               style={{
                 width: '100%',
-                height: 'auto',
-                objectFit: 'cover'
+                height: '100%',
+                objectFit: 'cover',
+                objectPosition: 'center',
+                opacity: 0.85
               }}
             />
           </div>
@@ -122,8 +128,14 @@ export default function Home() {
                   src="/images/lee-2.jpg"
                   alt="Strength training for athletes"
                   width={600}
-                  height={400}
+                  height={800}
                   className={styles.cardImage}
+                  unoptimized
+                  style={{
+                    width: '100%',
+                    height: '100%',
+                    objectFit: 'cover'
+                  }}
                 />
                 <div className={styles.cardOverlay}>
                   <h3>Strength Development</h3>
@@ -135,8 +147,14 @@ export default function Home() {
                   src="/images/lee-3.jpg"
                   alt="Speed and power training"
                   width={600}
-                  height={400}
+                  height={800}
                   className={styles.cardImage}
+                  unoptimized
+                  style={{
+                    width: '100%',
+                    height: '100%',
+                    objectFit: 'cover'
+                  }}
                 />
                 <div className={styles.cardOverlay}>
                   <h3>Speed & Power</h3>
@@ -148,8 +166,14 @@ export default function Home() {
                   src="/images/lee-bg.jpg"
                   alt="Injury prevention and rehabilitation"
                   width={600}
-                  height={400}
+                  height={800}
                   className={styles.cardImage}
+                  unoptimized
+                  style={{
+                    width: '100%',
+                    height: '100%',
+                    objectFit: 'cover'
+                  }}
                 />
                 <div className={styles.cardOverlay}>
                   <h3>Injury Prevention</h3>
@@ -161,8 +185,14 @@ export default function Home() {
                   src="/images/lee-5.jpg"
                   alt="Performance nutrition counseling"
                   width={600}
-                  height={400}
+                  height={800}
                   className={styles.cardImage}
+                  unoptimized
+                  style={{
+                    width: '100%',
+                    height: '100%',
+                    objectFit: 'cover'
+                  }}
                 />
                 <div className={styles.cardOverlay}>
                   <h3>Performance Nutrition</h3>

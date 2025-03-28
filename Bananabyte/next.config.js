@@ -8,9 +8,13 @@ const nextConfig = {
   },
   images: {
     domains: ['coachleemou.com', 'www.coachleemou.com'],
-    unoptimized: false,
-    loader: "default",
-    path: "/",
+    unoptimized: true,
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: '**',
+      },
+    ],
   },
   async headers() {
     return [

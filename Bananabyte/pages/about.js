@@ -33,11 +33,13 @@ export default function About() {
                 height={240}
                 className={styles.avatar}
                 priority
-                fetchpriority="high"
+                unoptimized
                 quality={95}
                 style={{
                   width: '100%',
-                  height: '100%'
+                  height: '100%',
+                  objectFit: 'cover',
+                  objectPosition: 'center'
                 }}
               />
             </div>
