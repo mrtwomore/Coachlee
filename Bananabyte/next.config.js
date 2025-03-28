@@ -9,6 +9,8 @@ const nextConfig = {
   images: {
     domains: ['coachleemou.com', 'www.coachleemou.com'],
     unoptimized: false,
+    loader: "default",
+    path: "/",
   },
   async headers() {
     return [

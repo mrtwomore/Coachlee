@@ -30,15 +30,15 @@ export default function Home() {
         <Navigation />
         <section className={styles.hero}>
           <div className={styles.heroBackground}>
-            <Image
+            <img
               src="/images/lee-bg.jpg"
               alt="Elite strength and conditioning training"
               className={styles.heroImage}
-              width={1920}
-              height={1080}
-              priority
-              fetchpriority="high"
-              quality={85}
+              style={{
+                width: '100%',
+                height: 'auto',
+                objectFit: 'cover'
+              }}
             />
           </div>
           <div className={styles.heroContent}>
