@@ -1,13 +1,18 @@
 {
   "version": 2,
-  "buildCommand": "cd Bananabyte && npm run build",
-  "outputDirectory": "Bananabyte/.next",
-  "installCommand": "npm run setup",
-  "framework": "nextjs",
-  "rewrites": [
+  "builds": [
     {
-      "source": "/(.*)",
-      "destination": "/Bananabyte/$1"
+      "src": "Bananabyte/package.json",
+      "use": "@vercel/next",
+      "config": { 
+        "distDir": ".next"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/Bananabyte/$1"
     }
   ]
 } 
