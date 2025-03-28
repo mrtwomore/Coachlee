@@ -1,10 +1,14 @@
 import { NextResponse } from 'next/server';
 
 export function middleware(request) {
-  // Just allow the request to continue without any checks
+  // Just allow all requests to continue without modification
   return NextResponse.next();
 }
 
+// Limit middleware to only run on necessary routes
 export const config = {
-  matcher: ['/((?!api/auth|_next/static|_next/image|images|favicon.ico).*)'],
+  matcher: [
+    // Skip all internal paths
+    '/((?!api|_next/static|_next/image|favicon.ico|images).*)',
+  ],
 }; 

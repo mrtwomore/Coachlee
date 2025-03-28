@@ -3,20 +3,5 @@
   "buildCommand": "cd Bananabyte && npm run build",
   "outputDirectory": "Bananabyte/.next",
   "installCommand": "cd Bananabyte && npm install",
-  "builds": [
-    {
-      "src": "Bananabyte/package.json",
-      "use": "@vercel/next",
-      "config": { 
-        "distDir": ".next",
-        "buildCommand": "npm run build"
-      }
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/Bananabyte/$1"
-    }
-  ]
+  "framework": "nextjs"
 } 
