@@ -53,7 +53,7 @@ const ProjectModal = ({ project, onClose }) => {
                   alt={`${project.title} - Image ${currentImageIndex + 1}`} 
                   onError={(e) => {
                     console.error(`Failed to load image: ${project.images[currentImageIndex]}`);
-                    e.target.src = project.image || '/images/placeholder.svg';
+                    e.target.src = project.image || '/static/images/placeholder.svg';
                   }}
                 />
                 <div className={styles.imageNavigation}>
@@ -83,7 +83,7 @@ const ProjectModal = ({ project, onClose }) => {
                         alt={`Thumbnail ${index + 1}`} 
                         onError={(e) => {
                           console.error(`Failed to load thumbnail: ${img}`);
-                          e.target.src = project.image || '/images/placeholder.svg';
+                          e.target.src = project.image || '/static/images/placeholder.svg';
                         }}
                       />
                     </div>
@@ -96,7 +96,7 @@ const ProjectModal = ({ project, onClose }) => {
                 alt={project.title} 
                 onError={(e) => {
                   console.error(`Failed to load main image: ${project.image}`);
-                  e.target.src = '/images/placeholder.svg';
+                  e.target.src = '/static/images/placeholder.svg';
                 }}
               />
             )}

@@ -17,11 +17,6 @@
       "dest": "/Bananabyte/static/$1"
     },
     {
-      "src": "/images/(.*)",
-      "headers": { "cache-control": "public, max-age=31536000, immutable" },
-      "dest": "/Bananabyte/public/static/images/$1"
-    },
-    {
       "src": "/(.*)",
       "dest": "/Bananabyte/$1"
     }
