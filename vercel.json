@@ -3,11 +3,5 @@
   "buildCommand": "cd Bananabyte && npm run build",
   "outputDirectory": "Bananabyte/.next",
   "installCommand": "cd Bananabyte && npm install",
-  "framework": "nextjs",
-  "projectSettings": {
-    "framework": "nextjs",
-    "buildCommand": null,
-    "devCommand": null,
-    "outputDirectory": null
-  }
+  "framework": "nextjs"
 } 
