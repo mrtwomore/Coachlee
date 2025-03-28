@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "buildCommand": "cd Bananabyte && npm install && npm run build",
+  "outputDirectory": "Bananabyte/.next",
+  "installCommand": "cd Bananabyte && npm install",
+  "framework": "nextjs"
+} 
