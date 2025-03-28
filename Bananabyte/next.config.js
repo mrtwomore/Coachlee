@@ -6,6 +6,10 @@ const nextConfig = {
     // Disabling ESLint during production build
     ignoreDuringBuilds: true,
   },
+  images: {
+    domains: ['coachleemou.com', 'www.coachleemou.com'],
+    unoptimized: false,
+  },
   async headers() {
     return [
       {

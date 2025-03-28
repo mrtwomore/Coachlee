@@ -27,7 +27,7 @@ export default function About() {
           <div className={styles.profile}>
             <div className={styles.profileImage}>
               <Image
-                src="/images/IMG_0297.jpg"
+                src="/images/img-0297.jpg"
                 alt="Coach Lee"
                 width={240}
                 height={240}

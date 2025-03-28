@@ -31,7 +31,7 @@ export default function Home() {
         <section className={styles.hero}>
           <div className={styles.heroBackground}>
             <Image
-              src="/images/Lee BG.jpg"
+              src="/images/lee-bg.jpg"
               alt="Elite strength and conditioning training"
               className={styles.heroImage}
               width={1920}
@@ -119,7 +119,7 @@ export default function Home() {
             <div className={styles.imageGrid}>
               <div className={styles.imageCard}>
                 <Image
-                  src="/images/lee 2.jpg"
+                  src="/images/lee-2.jpg"
                   alt="Strength training for athletes"
                   width={600}
                   height={400}
@@ -132,7 +132,7 @@ export default function Home() {
               </div>
               <div className={styles.imageCard}>
                 <Image
-                  src="/images/lee 3.jpg"
+                  src="/images/lee-3.jpg"
                   alt="Speed and power training"
                   width={600}
                   height={400}
@@ -145,7 +145,7 @@ export default function Home() {
               </div>
               <div className={styles.imageCard}>
                 <Image
-                  src="/images/Lee BG.jpg"
+                  src="/images/lee-bg.jpg"
                   alt="Injury prevention and rehabilitation"
                   width={600}
                   height={400}
@@ -158,7 +158,7 @@ export default function Home() {
               </div>
               <div className={styles.imageCard}>
                 <Image
-                  src="/images/lee 5.jpg"
+                  src="/images/lee-5.jpg"
                   alt="Performance nutrition counseling"
                   width={600}
                   height={400}
